@@ -38,6 +38,15 @@
 - Adobe PDF 永久遮盖和隐藏信息清理说明，用于脱敏工具的技术风险参考。
   <https://helpx.adobe.com/acrobat/desktop/protect-documents/redact-pdfs/sanitize.html>
 
+## 健康科普与健康素养
+
+- 国家卫生健康委《关于建立健全全媒体健康科普知识发布和传播机制的指导意见》解读：要求内容准确、循证、通俗易懂，并具备来源、作者、发布时间和适用人群等要素，建立专业审核机制。
+  <https://www.nhc.gov.cn/xcs/c100122/202205/645b58a03c064f23b07fec33e7df7d26.shtml>
+- 2025 年《关于规范“自媒体”医疗科普行为的通知》：要求严格标注来源、核验资质，并限制无资质账号发布专业医疗科普内容和违规付费诊疗导流。
+  <https://www.nhc.gov.cn/wjw/mtbd/202508/fcf3c0956a9441d781ca529030a42d6b.shtml>
+- WHO 健康素养说明：可信信息需要让人能够获取、理解、评价和使用，而不只是提供原始材料。
+  <https://www.who.int/news-room/fact-sheets/detail/health-literacy>
+
 ## 使用规则
 
 - 发布前检查来源日期、适用人群和是否已更新；
