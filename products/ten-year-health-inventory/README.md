@@ -162,6 +162,7 @@
 - [对外说明页](public-offer.md)
 - [用户信息表](intake-form.md)
 - [报告模板](report-template.md)
+- [虚构样板报告与内部交付复盘](samples/README.md)
 - [准入与中止规则](scope-and-screening.md)
 - [循证知识简报标准](evidence-brief-standard.md)
 - [健康寿命要素信息盘点标准](healthspan-factors-standard.md)
