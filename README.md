@@ -41,6 +41,11 @@
 6. [健年·未来十年健康盘点](products/ten-year-health-inventory/README.md)
 7. [90 天验证计划](operations/90-day-validation-plan.md)
 
+## 品牌官网
+
+- 正式访问：[健年 Healthspan｜科学养生，少走弯路](https://jiannian-healthspan.melbourne-dream2030.chatgpt.site)
+- 网站源码：[website](website/README.md)
+
 ## 项目原则
 
 1. **先成交，后扩张**：新账号、新工具和自动化都必须由真实需求触发。
