@@ -1,0 +1,11 @@
+.DS_Store
+.idea/
+.vscode/
+*.tmp
+*.log
+
+# 用户资料、病历和任何可识别健康数据不得进入仓库
+private/
+user-data/
+medical-records/
+exports/
