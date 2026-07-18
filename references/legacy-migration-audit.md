@@ -12,8 +12,8 @@
 |---|---|---|
 | `BRAND-STRATEGY-HEALTHSPAN-2026-05-03.md` | 健年 Healthspan 母品牌、健康寿命、循证与克制 | `docs/01-brand-strategy.md` |
 | `STRATEGY-RESET-2026-05-02.md` | 先做服务型 MVP、内容服务于验证、避免系统过重 | `docs/00-current-context.md`、`operations/90-day-validation-plan.md` |
-| `PREMIUM-SERVICE-STANDARD-2026-05-03.md` | 风险排序、资料整理、行动计划、专业边界、长期复盘 | `products/health-path-audit/`、`compliance/` |
-| `HEALTHSPAN-ASSESSMENT-MVP-PACK-2026-05-03.md` | 人工优先、表单和报告模板思想 | `products/health-path-audit/` |
+| `PREMIUM-SERVICE-STANDARD-2026-05-03.md` | 资料整理、行动计划、专业边界、长期复盘 | `products/ten-year-health-inventory/`、`compliance/` |
+| `HEALTHSPAN-ASSESSMENT-MVP-PACK-2026-05-03.md` | 人工优先、表单和报告模板思想 | `products/ten-year-health-inventory/` |
 | `AGENTS.md`、内容规范 | 循证表达、标注证据、不诊断、不夸大 | `AGENTS.md`、`content/content-strategy.md` |
 
 ## 降级为历史参考
@@ -36,7 +36,7 @@
 
 ## 新增但原项目缺失
 
-- 从创始人真实的 5 万元康复经历出发的健康投入复盘与路径审计方法；
+- 从创始人真实的 5 万元康复经历出发，将健康投入复盘升级为未来十年健康盘点的入口模块；
 - 产品 0 到高端年度服务的阶段性产品阶梯；
 - 以真实订单触发垂直账号的品牌矩阵规则；
 - 本地病历脱敏工具的信任基础设施定位；
