@@ -33,6 +33,8 @@
   <https://www.npc.gov.cn/npc/c2/c30834/202108/t20210820_313088.html>
 - 国家卫生健康委互联网诊疗监管细则。
   <https://www.nhc.gov.cn/yzygj/c100068/202203/2072f0e8988249e59d942e1b2a933916.shtml>
+- 市场监管总局、国家卫生健康委、国家中医药局《医疗广告认定指南》，用于区分健康科普、医疗信息与医疗服务宣传。
+  <https://www.samr.gov.cn/ggjgs/tzgg/art/2025/art_fe4ab107d0784ee7afd212d16e6345e8.html>
 - Adobe PDF 永久遮盖和隐藏信息清理说明，用于脱敏工具的技术风险参考。
   <https://helpx.adobe.com/acrobat/desktop/protect-documents/redact-pdfs/sanitize.html>
 
