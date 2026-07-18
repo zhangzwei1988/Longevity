@@ -35,6 +35,10 @@
   <https://www.nhc.gov.cn/yzygj/c100068/202203/2072f0e8988249e59d942e1b2a933916.shtml>
 - 市场监管总局、国家卫生健康委、国家中医药局《医疗广告认定指南》，用于区分健康科普、医疗信息与医疗服务宣传。
   <https://www.samr.gov.cn/ggjgs/tzgg/art/2025/art_fe4ab107d0784ee7afd212d16e6345e8.html>
+- 国家卫生健康委关于转诊服务的说明：是否需要转诊应由接诊医师根据诊疗需要和医疗机构能力判断，由医疗机构转诊体系承接。
+  <https://www.nhc.gov.cn/xcs/c100122/202411/c7dc703d2fdc417c9807170573151d23.shtml>
+- 国家卫生健康委关于检查检验结果互认的指导原则：是否满足诊疗需要以接诊医师判断为标准。
+  <https://www.nhc.gov.cn/wjw/c100375/202411/6b02950e5bc448b988f346f8119263ae.shtml>
 - Adobe PDF 永久遮盖和隐藏信息清理说明，用于脱敏工具的技术风险参考。
   <https://helpx.adobe.com/acrobat/desktop/protect-documents/redact-pdfs/sanitize.html>
 
