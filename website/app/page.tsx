@@ -228,6 +228,7 @@ export default function Home() {
           </div>
           <figure className="method-illustration">
             <img src="/method-evidence-illustration.webp" alt="杂乱健康信息经过证据筛选，形成清晰路径与四项方法原则的示意图" />
+            <figcaption>从杂乱信息，到有出处、有边界的清晰选择。</figcaption>
           </figure>
         </div>
         <div className="principle-grid">
