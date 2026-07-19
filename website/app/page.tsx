@@ -227,8 +227,7 @@ export default function Home() {
             <h2>而是知道什么有依据，<br />什么还不能下结论。</h2>
           </div>
           <figure className="method-illustration">
-            <img src="/method-evidence-illustration.webp" alt="杂乱健康信息经过证据筛选，形成清晰路径与四项方法原则的示意图" />
-            <figcaption>从杂乱信息，到有出处、有边界的清晰选择。</figcaption>
+            <img src="/method-evidence-illustration-wide.webp" alt="杂乱健康信息经过证据筛选，形成清晰路径与四项方法原则的示意图" />
           </figure>
         </div>
         <div className="principle-grid">
@@ -248,8 +247,8 @@ export default function Home() {
           <div className="section-heading">
             <p className="kicker">从申请到 30 天回看</p>
             <h2>一步一步，把复杂的事讲清楚。</h2>
+            <p className="process-subtitle">从确认范围到回看结果，每一步都有明确的目的和边界。</p>
           </div>
-          <p>从确认范围到回看结果，每一步都有明确的目的和边界。</p>
         </div>
         <div className="steps process-flow">
           {steps.map(([number, title, body]) => (
