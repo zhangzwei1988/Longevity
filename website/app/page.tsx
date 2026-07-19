@@ -1,8 +1,10 @@
+import PageNavigator from "./PageNavigator";
+
 const problems = [
-  "体检、课程、补剂和器械买了不少，却没有人帮你看完整过程。",
-  "收藏了很多健康知识，不同的人各说各话，越看越难选择。",
-  "花了钱、花了时间，却没有留下可以比较和复盘的记录。",
-  "想认真管理健康，但每次开始都像从零开始。",
+  ["买了很多", "体检、课程、补剂和器械不断增加，却没有人帮你看完整过程。"],
+  ["信息太杂", "收藏了很多健康知识，不同的人各说各话，越看越难选择。"],
+  ["无法复盘", "花了钱、花了时间，却没有留下可以比较和回看的共同记录。"],
+  ["总在重来", "想认真管理健康，但每次遇到新问题，都像重新从零开始。"],
 ];
 
 const deliverables = [
@@ -45,25 +47,10 @@ const principles = [
 
 export default function Home() {
   return (
-    <main>
-      <header className="site-header">
-        <a className="brand" href="#top" aria-label="健年首页">
-          <span className="brand-seal">健</span>
-          <span>
-            <strong>健年</strong>
-            <small>HEALTHSPAN</small>
-          </span>
-        </a>
-        <nav aria-label="主导航">
-          <a href="#vision">健年的理念</a>
-          <a href="#product">未来十年健康盘点</a>
-          <a href="#method">我们的方法</a>
-          <a href="/sample">样板案例</a>
-        </nav>
-        <a className="header-cta" href="#experience">首批体验</a>
-      </header>
+    <main className="paged-site">
+      <PageNavigator />
 
-      <section className="hero" id="top">
+      <section className="hero" id="top" data-page data-page-title="首页">
         <div className="hero-copy reveal">
           <div className="eyebrow"><span />健年 Healthspan</div>
           <h1>科学养生，<br /><em>少走弯路。</em></h1>
@@ -99,7 +86,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="vision-section section" id="vision">
+      <section className="vision-section section" id="vision" data-page data-page-title="健年的理念">
         <div className="section-label light">01 / 健年的理念</div>
         <div className="vision-statement">
           <p className="kicker light-text">HEALTHSPAN · 高质量生命时长</p>
@@ -116,29 +103,30 @@ export default function Home() {
         <div className="vision-disclaimer">健年不预测寿命，也不承诺延长具体年数。我们把长期愿景落在用户真正重视的生活能力上。</div>
       </section>
 
-      <section className="problem-section section" id="problem">
+      <section className="problem-section section" id="problem" data-page data-page-title="你的困境">
         <div className="section-label">02 / 你的困境</div>
         <div className="problem-layout">
-          <div className="section-heading sticky-heading">
+          <div className="section-heading problem-intro">
             <p className="kicker">钱花了不少，为什么还是不知道下一步？</p>
             <h2>你缺少的，可能不是下一个健康产品。</h2>
+            <div className="problem-answer">
+              <span>真正缺少的是</span>
+              <p>一次完整的整理：过去做过什么，现在缺少什么，下一步往哪里走。</p>
+            </div>
           </div>
-          <div className="problem-list">
-            {problems.map((problem, index) => (
-              <article key={problem}>
+          <div className="problem-grid">
+            {problems.map(([title, body], index) => (
+              <article key={title}>
                 <span>0{index + 1}</span>
-                <p>{problem}</p>
+                <h3>{title}</h3>
+                <p>{body}</p>
               </article>
             ))}
-            <div className="problem-answer">
-              <span className="answer-line" />
-              <p>而是一次完整的整理：过去做过什么，现在缺少什么，下一步往哪里走。</p>
-            </div>
           </div>
         </div>
       </section>
 
-      <section className="timeline-section section">
+      <section className="timeline-section section" id="timeline" data-page data-page-title="过去、现在与未来">
         <div className="section-label light">03 / 当前价值</div>
         <div className="timeline-intro">
           <p className="kicker light-text">不替你制造更多焦虑，只帮你把事情理顺</p>
@@ -163,7 +151,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="shortboard-section section">
+      <section className="shortboard-section section" id="shortboard" data-page data-page-title="长期方法">
         <div className="section-label">04 / 长期方法</div>
         <div className="shortboard-layout">
           <div className="shortboard-copy">
@@ -182,7 +170,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="product-section section" id="product">
+      <section className="product-section section" id="product" data-page data-page-title="未来十年健康盘点">
         <div className="section-label">05 / 从这里开始</div>
         <div className="product-heading">
           <div>
@@ -209,7 +197,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="case-section section">
+      <section className="case-section section" id="case" data-page data-page-title="样板案例">
         <div className="case-copy">
           <div className="section-label light">06 / 虚构样板</div>
           <p className="kicker light-text">DEMO-001 · 完全虚构</p>
@@ -229,7 +217,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="method-section section" id="method">
+      <section className="method-section section" id="method" data-page data-page-title="我们的方法">
         <div className="section-label">07 / 我们的方法</div>
         <div className="method-heading">
           <p className="kicker">科学，不是把话说得很难</p>
@@ -246,7 +234,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="process-section section">
+      <section className="process-section section" id="process" data-page data-page-title="服务流程">
         <div className="section-label">08 / 服务流程</div>
         <div className="process-layout">
           <div className="section-heading sticky-heading">
@@ -263,7 +251,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="fit-section section">
+      <section className="fit-section section" id="fit" data-page data-page-title="适用边界">
         <div className="fit-card suitable">
           <span className="fit-label">比较适合</span>
           <h2>你已经开始认真对待长期健康。</h2>
@@ -287,7 +275,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="origin-section section">
+      <section className="origin-section section" id="origin" data-page data-page-title="为什么做健年">
         <div className="origin-mark">健年</div>
         <div className="origin-copy">
           <div className="section-label">09 / 为什么做健年</div>
@@ -300,7 +288,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="experience-section section" id="experience">
+      <section className="experience-section section" id="experience" data-page data-page-title="首批体验">
         <div className="experience-card">
           <div className="experience-topline"><span>首批体验版 · 筹备中</span><span>限 5 位</span></div>
           <div className="experience-layout">
@@ -320,7 +308,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="faq-section section">
+      <section className="faq-section section" id="faq" data-page data-page-title="常见问题">
         <div className="section-label">10 / 常见问题</div>
         <div className="faq-layout">
           <div className="section-heading"><p className="kicker">在申请之前</p><h2>你可能还想知道</h2></div>
@@ -334,7 +322,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer>
+      <footer id="footer" data-page data-page-title="健年 Healthspan">
         <div className="footer-brand"><span className="brand-seal inverse">健</span><div><strong>健年</strong><small>HEALTHSPAN</small></div></div>
         <div className="footer-statement"><strong>让有活力的人生，尽可能长。</strong><span>科学养生，少走弯路。让复杂的健康信息，变成普通人能够理解和使用的选择。</span></div>
         <div className="footer-links"><a href="/sample">样板案例</a><a href="/boundaries">服务边界</a><a href="/privacy">隐私说明</a><span>多活十年 Lab</span></div>
