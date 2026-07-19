@@ -15,6 +15,8 @@ test("server-renders the finished brand homepage", async () => {
   assert.match(html, /科学养生/);
   assert.match(html, /少走弯路/);
   assert.match(html, /未来十年健康盘点/);
+  assert.match(html, /让有活力的人生/);
+  assert.match(html, /找到关键短板/);
   assert.match(html, /虚构样板/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton/);
 });
