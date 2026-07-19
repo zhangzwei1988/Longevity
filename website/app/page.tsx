@@ -222,8 +222,13 @@ export default function Home() {
       <section className="method-section section" id="method" data-page data-page-title="我们的方法">
         <div className="section-label">07 / 我们的方法</div>
         <div className="method-heading">
-          <p className="kicker">科学，不是把话说得很难</p>
-          <h2>而是知道什么有依据，<br />什么还不能下结论。</h2>
+          <div className="method-copy">
+            <p className="kicker">科学，不是把话说得很难</p>
+            <h2>而是知道什么有依据，<br />什么还不能下结论。</h2>
+          </div>
+          <figure className="method-illustration">
+            <img src="/method-evidence-illustration.webp" alt="杂乱健康信息经过证据筛选，形成清晰路径与四项方法原则的示意图" />
+          </figure>
         </div>
         <div className="principle-grid">
           {principles.map(([title, body], index) => (
