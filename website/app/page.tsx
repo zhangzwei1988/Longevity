@@ -198,22 +198,24 @@ export default function Home() {
       </section>
 
       <section className="case-section section" id="case" data-page data-page-title="样板案例">
-        <div className="case-copy">
-          <div className="section-label light">06 / 虚构样板</div>
-          <p className="kicker light-text">DEMO-001 · 完全虚构</p>
-          <h2>一年为健康花了<br /><em>31,600 元</em>，<br />为什么还是没有答案？</h2>
-          <p>健身、私教、智能手表、恢复服务和补剂都买过，却没有共同基线、持续记录和复盘日期。</p>
-          <a className="text-link light-link" href="/sample">查看完整样板报告 <span>↗</span></a>
-        </div>
-        <div className="case-ledger">
-          <div className="ledger-head"><span>健康投入地图</span><small>过去 12 个月</small></div>
-          {[
-            ["年度健身会员", "¥6,800"], ["12 节私教课", "¥7,200"],
-            ["智能手表", "¥3,200"], ["按摩与恢复服务", "¥8,400"],
-            ["多种非处方补剂", "¥6,000"],
-          ].map(([name, value]) => <div className="ledger-row" key={name}><span>{name}</span><strong>{value}</strong></div>)}
-          <div className="ledger-total"><span>合计投入</span><strong>¥31,600</strong></div>
-          <div className="ledger-note">“无法比较”不等于“没有效果”，只说明现有资料还不能回答。</div>
+        <div className="section-label light">06 / 虚构样板</div>
+        <div className="case-layout">
+          <div className="case-copy">
+            <p className="kicker light-text">DEMO-001 · 完全虚构</p>
+            <h2>一年为健康花了<br /><em>31,600 元</em>，<br />为什么还是没有答案？</h2>
+            <p>健身、私教、智能手表、恢复服务和补剂都买过，却没有共同基线、持续记录和复盘日期。</p>
+            <a className="text-link light-link" href="/sample">查看完整样板报告 <span>↗</span></a>
+          </div>
+          <div className="case-ledger">
+            <div className="ledger-head"><span>健康投入地图</span><small>过去 12 个月</small></div>
+            {[
+              ["年度健身会员", "¥6,800"], ["12 节私教课", "¥7,200"],
+              ["智能手表", "¥3,200"], ["按摩与恢复服务", "¥8,400"],
+              ["多种非处方补剂", "¥6,000"],
+            ].map(([name, value]) => <div className="ledger-row" key={name}><span>{name}</span><strong>{value}</strong></div>)}
+            <div className="ledger-total"><span>合计投入</span><strong>¥31,600</strong></div>
+            <div className="ledger-note">“无法比较”不等于“没有效果”，只说明现有资料还不能回答。</div>
+          </div>
         </div>
       </section>
 
@@ -236,59 +238,66 @@ export default function Home() {
 
       <section className="process-section section" id="process" data-page data-page-title="服务流程">
         <div className="section-label">08 / 服务流程</div>
-        <div className="process-layout">
-          <div className="section-heading sticky-heading">
+        <div className="process-heading">
+          <div className="section-heading">
             <p className="kicker">从申请到 30 天回看</p>
-            <h2>一步一步，<br />把复杂的事讲清楚。</h2>
+            <h2>一步一步，把复杂的事讲清楚。</h2>
           </div>
-          <div className="steps">
-            {steps.map(([number, title, body]) => (
-              <article key={number}>
-                <span>{number}</span><div><h3>{title}</h3><p>{body}</p></div>
-              </article>
-            ))}
-          </div>
+          <p>从确认范围到回看结果，每一步都有明确的目的和边界。</p>
+        </div>
+        <div className="steps process-flow">
+          {steps.map(([number, title, body]) => (
+            <article key={number}>
+              <span>{number}</span><div><h3>{title}</h3><p>{body}</p></div>
+            </article>
+          ))}
         </div>
       </section>
 
       <section className="fit-section section" id="fit" data-page data-page-title="适用边界">
-        <div className="fit-card suitable">
-          <span className="fit-label">比较适合</span>
-          <h2>你已经开始认真对待长期健康。</h2>
-          <ul>
-            <li>35—55 岁，已经为健康投入过时间和金钱</li>
-            <li>有一个明确的非诊疗困扰或生活方式目标</li>
-            <li>面对大量信息，不知道下一步如何选择</li>
-            <li>愿意整理事实、留下记录并参与复盘</li>
-          </ul>
-        </div>
-        <div className="fit-card unsuitable">
-          <span className="fit-label">暂不适合</span>
-          <h2>你现在需要的是医学判断或治疗。</h2>
-          <ul>
-            <li>正在处理重大疾病、急性问题或进行性症状</li>
-            <li>希望判断疾病、症状原因或病情轻重</li>
-            <li>希望获得药物、检查、治疗或康复方案</li>
-            <li>希望预测寿命、生物年龄或疾病风险</li>
-          </ul>
-          <a href="/boundaries">查看完整服务边界 →</a>
+        <div className="section-label">09 / 适用边界</div>
+        <div className="fit-layout">
+          <div className="fit-card suitable">
+            <span className="fit-label">比较适合</span>
+            <h2>你已经开始认真对待长期健康。</h2>
+            <ul>
+              <li>35—55 岁，已经为健康投入过时间和金钱</li>
+              <li>有一个明确的非诊疗困扰或生活方式目标</li>
+              <li>面对大量信息，不知道下一步如何选择</li>
+              <li>愿意整理事实、留下记录并参与复盘</li>
+            </ul>
+          </div>
+          <div className="fit-card unsuitable">
+            <span className="fit-label">暂不适合</span>
+            <h2>你现在需要的是医学判断或治疗。</h2>
+            <ul>
+              <li>正在处理重大疾病、急性问题或进行性症状</li>
+              <li>希望判断疾病、症状原因或病情轻重</li>
+              <li>希望获得药物、检查、治疗或康复方案</li>
+              <li>希望预测寿命、生物年龄或疾病风险</li>
+            </ul>
+            <a href="/boundaries">查看完整服务边界 →</a>
+          </div>
         </div>
       </section>
 
       <section className="origin-section section" id="origin" data-page data-page-title="为什么做健年">
-        <div className="origin-mark">健年</div>
-        <div className="origin-copy">
-          <div className="section-label">09 / 为什么做健年</div>
-          <p className="origin-lead">健年源于一次真实的健康困境。</p>
-          <h2>我们想要的，不是一个更长的寿命数字。</h2>
-          <p>创始人在医院、康复机构、治疗设备和健康产品上投入了大量时间和金钱，却始终没有得到一条清晰、连续、可验证的路径。</p>
-          <p>健年希望把复杂的健康信息变得更清楚，让人更早开始投资未来的行动能力、精力和生活自由，让每一次选择少一些盲目，多一些依据。</p>
-          <p className="origin-vision">让有活力的人生，尽可能长。</p>
-          <blockquote>科学养生，少走弯路。</blockquote>
+        <div className="section-label">10 / 为什么做健年</div>
+        <div className="origin-layout">
+          <div className="origin-mark">健年</div>
+          <div className="origin-copy">
+            <p className="origin-lead">健年源于一次真实的健康困境。</p>
+            <h2>我们想要的，不是一个更长的寿命数字。</h2>
+            <p>创始人在医院、康复机构、治疗设备和健康产品上投入了大量时间和金钱，却始终没有得到一条清晰、连续、可验证的路径。</p>
+            <p>健年希望把复杂的健康信息变得更清楚，让人更早开始投资未来的行动能力、精力和生活自由，让每一次选择少一些盲目，多一些依据。</p>
+            <p className="origin-vision">让有活力的人生，尽可能长。</p>
+            <blockquote>科学养生，少走弯路。</blockquote>
+          </div>
         </div>
       </section>
 
       <section className="experience-section section" id="experience" data-page data-page-title="首批体验">
+        <div className="section-label">11 / 首批体验</div>
         <div className="experience-card">
           <div className="experience-topline"><span>首批体验版 · 筹备中</span><span>限 5 位</span></div>
           <div className="experience-layout">
@@ -309,7 +318,7 @@ export default function Home() {
       </section>
 
       <section className="faq-section section" id="faq" data-page data-page-title="常见问题">
-        <div className="section-label">10 / 常见问题</div>
+        <div className="section-label">12 / 常见问题</div>
         <div className="faq-layout">
           <div className="section-heading"><p className="kicker">在申请之前</p><h2>你可能还想知道</h2></div>
           <div className="faq-list">
@@ -323,6 +332,7 @@ export default function Home() {
       </section>
 
       <footer id="footer" data-page data-page-title="健年 Healthspan">
+        <div className="footer-kicker">END / 健年 HEALTHSPAN</div>
         <div className="footer-brand"><span className="brand-seal inverse">健</span><div><strong>健年</strong><small>HEALTHSPAN</small></div></div>
         <div className="footer-statement"><strong>让有活力的人生，尽可能长。</strong><span>科学养生，少走弯路。让复杂的健康信息，变成普通人能够理解和使用的选择。</span></div>
         <div className="footer-links"><a href="/sample">样板案例</a><a href="/boundaries">服务边界</a><a href="/privacy">隐私说明</a><span>多活十年 Lab</span></div>
