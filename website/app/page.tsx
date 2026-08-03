@@ -1,48 +1,67 @@
 import PageNavigator from "./PageNavigator";
 
-const problems = [
-  ["买了很多", "体检、课程、补剂和器械不断增加，却没有人帮你看完整过程。"],
-  ["信息太杂", "收藏了很多健康知识，不同的人各说各话，越看越难选择。"],
-  ["无法复盘", "花了钱、花了时间，却没有留下可以比较和回看的共同记录。"],
-  ["总在重来", "想认真管理健康，但每次遇到新问题，都像重新从零开始。"],
+const homeworkQuestions = [
+  ["信", "这条说法的依据是什么？证据适用于谁？"],
+  ["做", "它能解决什么问题？现在需要行动吗？"],
+  ["花", "这笔投入买到了什么？以后怎么判断结果？"],
 ];
 
-const deliverables = [
+const contentValues = [
   {
-    mark: "一图",
-    title: "未来十年健康底图",
-    body: "把长期生活目标、已有健康记录和过去的健康投入放在同一张图里。",
+    number: "01",
+    title: "替你查依据",
+    body: "从指南、权威机构和可靠研究出发，也把证据的限制和未知讲清楚。",
   },
   {
-    mark: "一书",
-    title: "靠谱健康说明书",
-    body: "把权威资料中的重要通用知识讲明白，也告诉你证据不能回答什么。",
+    number: "02",
+    title: "替你拆问题",
+    body: "把混在一起的健康说法、现实选择和投入成本，拆成能逐项判断的问题。",
   },
   {
-    mark: "一包",
-    title: "专业沟通包",
-    body: "整理时间线、已有资料，以及下一次应该向合格专业人员确认的问题。",
+    number: "03",
+    title: "帮你少折腾",
+    body: "不同时塞给你十件事。先找到当前值得关注的一步，再决定要不要继续。",
   },
   {
-    mark: "一卡",
-    title: "30 天观察卡",
-    body: "只选一个非医疗行动，明确怎么记录、什么时候复盘，不再同时做十件事。",
+    number: "04",
+    title: "知道何时停手",
+    body: "内容不能回答的个人医学问题，明确交还给医生或其他合格专业人员。",
   },
 ];
 
-const steps = [
-  ["01", "确认范围", "先确认你的需求是否属于非诊疗健康盘点。"],
-  ["02", "整理事实", "用信息表和访谈，盘清投入、记录与长期目标。"],
-  ["03", "制作报告", "整理公开权威资料，形成一图、一书、一包、一卡。"],
-  ["04", "线上复盘", "用 45 分钟把重点、边界与下一步讲清楚。"],
-  ["05", "30 天回看", "检查行动是否发生，用真实结果修正下一步。"],
+const platforms = [
+  ["小红书", "图文与可收藏的健康功课", "主页链接待更新"],
+  ["视频号", "真人讲解与微信内分享", "主页入口待更新"],
+  ["抖音", "短视频内容与轻量分发", "主页链接待更新"],
 ];
 
 const principles = [
-  ["有出处", "重要信息尽量回到权威指南和可靠研究，不用一句“专家说”带过。"],
-  ["讲局限", "告诉你研究说明了什么，也明确哪些结论不能直接套在个人身上。"],
-  ["不带货", "不靠推销补剂、器械、药品或医疗排名赚钱，避免利益绑架判断。"],
-  ["守边界", "不诊断、不治疗、不预测寿命；需要医学判断时，交还给合格专业人员。"],
+  ["有出处", "重要说法尽量回到可靠来源，不用一句“专家说”带过。"],
+  ["讲局限", "说明资料讲了什么，也说清楚哪些结论不能直接套在个人身上。"],
+  ["不收割", "不靠制造焦虑推销补剂、器械、药品或预设产品。"],
+  ["守边界", "不诊断、不治疗、不预测寿命；需要医学判断时交给合格专业人员。"],
+];
+
+const qrPattern = [
+  "1111111010101111111",
+  "1000001011101000001",
+  "1011101000101011101",
+  "1011101010101011101",
+  "1011101001101011101",
+  "1000001010101000001",
+  "1111111010101111111",
+  "0000000011100000000",
+  "1010111110111010101",
+  "0111000101000111010",
+  "1101111011111100111",
+  "0010100100010111000",
+  "1111111011011101011",
+  "1000001000110101110",
+  "1011101011101110101",
+  "1011101001010011110",
+  "1011101011111110101",
+  "1000001000100011010",
+  "1111111011011010111",
 ];
 
 export default function Home() {
@@ -53,182 +72,128 @@ export default function Home() {
       <section className="hero" id="top" data-page data-page-title="首页">
         <div className="hero-copy reveal">
           <div className="eyebrow"><span />健年 Healthspan</div>
-          <h1>科学养生，<br /><em>少走弯路。</em></h1>
+          <h1>专替忙人做<br /><em>健康功课。</em></h1>
           <p className="hero-lead">
-            我们关心的，不只是你能活多久，而是有活力、有能力、有选择的日子能持续多久。
+            帮你查依据、拆问题、算投入，判断什么值得信、值得做、值得花钱。
           </p>
-          <p className="hero-note">健年帮你整理健康投入、读懂可靠信息，找到现在最值得优先关注的一环。</p>
+          <p className="hero-note">健康少踩坑，花钱少冤枉。让复杂的健康信息，变成普通人能够理解和使用的选择。</p>
           <div className="hero-actions">
-            <a className="button button-primary" href="#experience">了解首批体验 <span>→</span></a>
-            <a className="button button-ghost" href="/sample">查看样板报告</a>
+            <a className="button button-primary" href="#follow">关注多活十年 Lab <span>→</span></a>
+            <a className="button button-ghost" href="#value">看看我们怎么做</a>
           </div>
-          <div className="trust-row" aria-label="健年的三项承诺">
-            <span>权威来源</span><span>说明边界</span><span>不卖补剂器械</span>
+          <div className="trust-row" aria-label="健年的四项内容承诺">
+            <span>有出处</span><span>讲局限</span><span>不收割焦虑</span><span>守医疗边界</span>
           </div>
         </div>
 
-        <div className="hero-visual" aria-label="延长活力人生的品牌理念示意图">
-          <div className="visual-orbit orbit-one" />
-          <div className="visual-orbit orbit-two" />
-          <div className="visual-core">
-            <small>HEALTHSPAN</small>
-            <strong>活力<br />更长久</strong>
-          </div>
-          <div className="evidence-card card-source">
-            <span>01</span><strong>行动能力</strong><small>继续去想去的地方</small>
-          </div>
-          <div className="evidence-card card-boundary">
-            <span>02</span><strong>稳定精力</strong><small>工作之外仍有生活</small>
-          </div>
-          <div className="evidence-card card-action">
-            <span>03</span><strong>生活自主</strong><small>年长以后依然有选择</small>
-          </div>
-        </div>
-      </section>
-
-      <section className="vision-section section" id="vision" data-page data-page-title="健年的理念">
-        <div className="section-label light">01 / 健年的理念</div>
-        <div className="vision-statement">
-          <p className="kicker light-text">HEALTHSPAN · 高质量生命时长</p>
-          <h2>让有活力的人生，<br /><em>尽可能长。</em></h2>
-          <p>长寿的意义，不只是多活几年。是年纪大了，依然能自由行动、保持精力、独立生活，继续做自己重视的事。</p>
-        </div>
-        <div className="vitality-path" aria-label="从今天投资到未来保有生活能力">
-          <article><span>今天</span><strong>提前投资</strong><p>在状态还不错的时候，就开始积累健康底子。</p></article>
-          <div className="path-arrow">→</div>
-          <article><span>长期</span><strong>补关键一环</strong><p>不是同时做所有事，而是持续找到优先级。</p></article>
-          <div className="path-arrow">→</div>
-          <article><span>未来</span><strong>保有选择</strong><p>把行动、精力和独立生活能力留得更久。</p></article>
-        </div>
-        <div className="vision-disclaimer">健年不预测寿命，也不承诺延长具体年数。我们把长期愿景落在用户真正重视的生活能力上。</div>
-      </section>
-
-      <section className="problem-section section" id="problem" data-page data-page-title="你的困境">
-        <div className="section-label">02 / 你的困境</div>
-        <div className="problem-layout">
-          <div className="section-heading problem-intro">
-            <p className="kicker">钱花了不少，为什么还是不知道下一步？</p>
-            <h2>你缺少的，可能不是下一个健康产品。</h2>
-            <div className="problem-answer">
-              <span>真正缺少的是</span>
-              <p>一次完整的整理：过去做过什么，现在缺少什么，下一步往哪里走。</p>
+        <div className="homework-visual" aria-label="多活十年 Lab 健康功课单示意">
+          <div className="paper-clip" />
+          <div className="homework-paper">
+            <div className="paper-topline"><span>多活十年 Lab</span><small>健康功课单</small></div>
+            <h2>这件事，<br />先别急着信。</h2>
+            <div className="homework-list">
+              {homeworkQuestions.map(([mark, body]) => (
+                <div className="homework-row" key={mark}>
+                  <span>{mark}</span><p>{body}</p>
+                </div>
+              ))}
             </div>
+            <div className="paper-action"><span>今天只做一件事</span><strong>先把问题问对。</strong></div>
           </div>
-          <div className="problem-grid">
-            {problems.map(([title, body], index) => (
-              <article key={title}>
-                <span>0{index + 1}</span>
-                <h3>{title}</h3>
-                <p>{body}</p>
+          <div className="red-note">别让焦虑替你做决定</div>
+          <div className="green-note">把值得行动的圈出来</div>
+        </div>
+      </section>
+
+      <section className="value-section section" id="value" data-page data-page-title="关注价值">
+        <div className="section-label">01 / 关注之后，你能得到什么</div>
+        <div className="value-heading">
+          <p className="kicker">信息已经够多了，缺的是判断</p>
+          <h2>不再多塞一条建议，<br />而是帮你少走一段弯路。</h2>
+          <p>多活十年 Lab 不做泛健康知识搬运。我们从真实困境出发，把证据、现实选择、投入成本和下一步行动放到同一张功课单上。</p>
+        </div>
+        <div className="value-grid">
+          {contentValues.map((item) => (
+            <article key={item.number}>
+              <span>{item.number}</span>
+              <h3>{item.title}</h3>
+              <p>{item.body}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="follow-section section" id="follow" data-page data-page-title="关注账号">
+        <div className="section-label light">02 / 选择你常用的平台</div>
+        <div className="follow-intro">
+          <div>
+            <p className="kicker light-text">多活十年 Lab · 当前公众入口</p>
+            <h2>公众号优先，<br /><em>把健康功课讲完整。</em></h2>
+          </div>
+          <p>同一个核心问题会根据平台重新表达，但事实、证据和边界保持一致。你只需要关注自己最常用的入口。</p>
+        </div>
+
+        <div className="channel-layout">
+          <article className="primary-channel">
+            <div className="channel-copy">
+              <span className="channel-priority">首要关注入口</span>
+              <p className="channel-name">微信公众号</p>
+              <h3>多活十年 Lab</h3>
+              <p>适合完整阅读一个健康问题：为什么值得关注、证据到哪一步、普通人接下来可以怎么判断。</p>
+              <div className="channel-meta"><span>深度长文</span><span>健康功课单</span><span>来源与边界</span></div>
+            </div>
+            <div className="qr-shell" aria-label="微信公众号二维码占位，暂不可扫描">
+              <div className="qr-grid" aria-hidden="true">
+                {qrPattern.join("").split("").map((cell, index) => <i className={cell === "1" ? "filled" : ""} key={index} />)}
+              </div>
+              <strong>二维码占位</strong>
+              <small>暂不可扫描 · 待更新</small>
+            </div>
+          </article>
+
+          <div className="platform-grid">
+            {platforms.map(([name, description, status]) => (
+              <article key={name}>
+                <div><span>多活十年 Lab</span><h3>{name}</h3></div>
+                <p>{description}</p>
+                <span className="platform-status">{status}</span>
               </article>
             ))}
           </div>
         </div>
+        <p className="placeholder-note">当前页面未放置任何虚构账号链接。收到正式链接和二维码后，将逐项替换并核验。</p>
       </section>
 
-      <section className="timeline-section section" id="timeline" data-page data-page-title="过去、现在与未来">
-        <div className="section-label light">03 / 当前价值</div>
-        <div className="timeline-intro">
-          <p className="kicker light-text">不替你制造更多焦虑，只帮你把事情理顺</p>
-          <h2>盘清过去，<br />看懂现在，<br /><em>理清未来。</em></h2>
+      <section className="architecture-section section" id="architecture" data-page data-page-title="品牌架构">
+        <div className="section-label">03 / 品牌架构</div>
+        <div className="architecture-heading">
+          <p className="kicker">简单一点，也更诚实一点</p>
+          <h2>一个长期品牌，<br />一个当前公众入口。</h2>
+          <p>不展示尚未成立的产品矩阵，也不预先制造一排垂直账号。先把真正有用的内容做好，让工具和服务从反复出现的真实需求中生长。</p>
         </div>
-        <div className="timeline-grid">
-          <article>
-            <div className="timeline-number">过去</div>
-            <h3>把投入整理清楚</h3>
-            <p>做过什么、花过多少钱、得到过哪些建议，还缺少哪些可以比较的记录。</p>
+        <div className="brand-map" aria-label="健年与多活十年 Lab 的品牌关系">
+          <article className="brand-parent">
+            <div className="map-seal">健</div>
+            <div><span>母品牌</span><h3>健年 Healthspan</h3><p>承载长期愿景、证据标准、专业边界与未来建设。</p></div>
           </article>
-          <article>
-            <div className="timeline-number">现在</div>
-            <h3>把靠谱信息讲明白</h3>
-            <p>从权威资料中提炼通用结论，分清可靠证据、营销说法与仍然未知的部分。</p>
-          </article>
-          <article className="timeline-featured">
-            <div className="timeline-number">未来</div>
-            <h3>把下一步理清楚</h3>
-            <p>明确未来十年想保留的生活能力，知道什么可以观察、什么需要专业确认。</p>
+          <div className="map-connector"><span>当前公众入口</span></div>
+          <article className="brand-account">
+            <div className="lab-mark">LAB</div>
+            <div><span>内容账号</span><h3>多活十年 Lab</h3><p>站在忙碌、有健康意识的用户一边，替他们做好健康功课。</p></div>
+            <div className="platform-pills"><span>公众号</span><span>小红书</span><span>视频号</span><span>抖音</span></div>
           </article>
         </div>
+        <div className="growth-note"><strong>未来怎么生长？</strong><span>先有专业且利他的内容，再有长期信任和真实问题；只有公开内容解决不了的需求反复出现，才考虑轻量工具、专业合作或小范围服务。</span></div>
       </section>
 
-      <section className="shortboard-section section" id="shortboard" data-page data-page-title="长期方法">
-        <div className="section-label">04 / 长期方法</div>
-        <div className="shortboard-layout">
-          <div className="shortboard-copy">
-            <p className="kicker">未来的活力，需要从今天开始投资</p>
-            <h2>找到关键短板，<br />一次补对一块。</h2>
-            <p>健康不是靠一次消费解决的。真正的长期管理，是不断找到目前最限制你的那一环，确认边界，采取行动，再用记录检验结果。</p>
-            <div className="scope-note"><strong>健年当前能做的</strong><span>识别信息、认知、执行和资源上的管理断点；涉及身体机能、疾病和医学风险时，交给合格专业人员评估。</span></div>
-          </div>
-          <div className="shortboard-loop" aria-label="发现、确认、行动、复盘的循环">
-            <div className="loop-center"><small>长期</small><strong>保持<br />活力</strong></div>
-            <div className="loop-step step-discover"><span>01</span><strong>发现</strong><small>哪一环最值得关注</small></div>
-            <div className="loop-step step-confirm"><span>02</span><strong>确认</strong><small>自己观察或专业评估</small></div>
-            <div className="loop-step step-act"><span>03</span><strong>行动</strong><small>一次只推进一件事</small></div>
-            <div className="loop-step step-review"><span>04</span><strong>复盘</strong><small>用记录修正下一步</small></div>
-          </div>
-        </div>
-      </section>
-
-      <section className="product-section section" id="product" data-page data-page-title="未来十年健康盘点">
-        <div className="section-label">05 / 从这里开始</div>
-        <div className="product-heading">
+      <section className="method-section section" id="method" data-page data-page-title="内容方法">
+        <div className="section-label light">04 / 每一份健康功课怎么做</div>
+        <div className="method-intro">
           <div>
-            <p className="kicker">健年·未来十年健康盘点</p>
-            <h2>先看清现在，<br />再为未来积累。</h2>
+            <p className="kicker light-text">科学，不是把话说得很难</p>
+            <h2>而是知道什么有依据，<br /><em>什么还不能下结论。</em></h2>
           </div>
-          <p className="product-summary">从一个现实困扰出发，把健康记录、过去投入、可靠信息和未来能力目标连接起来，找到当前最值得优先关注的一环。</p>
-        </div>
-        <div className="deliverable-grid">
-          {deliverables.map((item, index) => (
-            <article className={index === 0 ? "deliverable-card featured" : "deliverable-card"} key={item.mark}>
-              <div className="deliverable-mark">{item.mark}</div>
-              <div>
-                <span className="card-index">0{index + 1}</span>
-                <h3>{item.title}</h3>
-                <p>{item.body}</p>
-              </div>
-            </article>
-          ))}
-        </div>
-        <div className="session-strip">
-          <div><strong>＋一次 45 分钟线上复盘</strong><span>把重点、边界与下一步讲清楚</span></div>
-          <a href="/sample">看看一份完整样板 <span>→</span></a>
-        </div>
-      </section>
-
-      <section className="case-section section" id="case" data-page data-page-title="样板案例">
-        <div className="section-label light">06 / 虚构样板</div>
-        <div className="case-layout">
-          <div className="case-copy">
-            <p className="kicker light-text">DEMO-001 · 完全虚构</p>
-            <h2>一年为健康花了<br /><em>31,600 元</em>，<br />为什么还是没有答案？</h2>
-            <p>健身、私教、智能手表、恢复服务和补剂都买过，却没有共同基线、持续记录和复盘日期。</p>
-            <a className="text-link light-link" href="/sample">查看完整样板报告 <span>↗</span></a>
-          </div>
-          <div className="case-ledger">
-            <div className="ledger-head"><span>健康投入地图</span><small>过去 12 个月</small></div>
-            {[
-              ["年度健身会员", "¥6,800"], ["12 节私教课", "¥7,200"],
-              ["智能手表", "¥3,200"], ["按摩与恢复服务", "¥8,400"],
-              ["多种非处方补剂", "¥6,000"],
-            ].map(([name, value]) => <div className="ledger-row" key={name}><span>{name}</span><strong>{value}</strong></div>)}
-            <div className="ledger-total"><span>合计投入</span><strong>¥31,600</strong></div>
-            <div className="ledger-note">“无法比较”不等于“没有效果”，只说明现有资料还不能回答。</div>
-          </div>
-        </div>
-      </section>
-
-      <section className="method-section section" id="method" data-page data-page-title="我们的方法">
-        <div className="section-label">07 / 我们的方法</div>
-        <div className="method-heading">
-          <div className="method-copy">
-            <p className="kicker">科学，不是把话说得很难</p>
-            <h2>而是知道什么有依据，<br />什么还不能下结论。</h2>
-          </div>
-          <figure className="method-illustration">
-            <img src="/method-evidence-illustration-wide.webp" alt="杂乱健康信息经过证据筛选，形成清晰路径与四项方法原则的示意图" />
-          </figure>
+          <p>我们会努力把研究事实、证据解释、普通人可以采取的低风险行动，以及必须由专业人员回答的问题分开。</p>
         </div>
         <div className="principle-grid">
           {principles.map(([title, body], index) => (
@@ -239,99 +204,19 @@ export default function Home() {
             </article>
           ))}
         </div>
+        <div className="method-disclaimer">多活十年 Lab 不是医疗机构，内容不能替代诊断、治疗、用药建议或其他个体医学判断。</div>
       </section>
 
-      <section className="process-section section" id="process" data-page data-page-title="服务流程">
-        <div className="section-label">08 / 服务流程</div>
-        <div className="process-heading">
-          <div className="section-heading">
-            <p className="kicker">从申请到 30 天回看</p>
-            <h2>一步一步，把复杂的事讲清楚。</h2>
-            <p className="process-subtitle">从确认范围到回看结果，每一步都有明确的目的和边界。</p>
-          </div>
-        </div>
-        <div className="steps process-flow">
-          {steps.map(([number, title, body]) => (
-            <article key={number}>
-              <span>{number}</span><div><h3>{title}</h3><p>{body}</p></div>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="fit-section section" id="fit" data-page data-page-title="适用边界">
-        <div className="section-label">09 / 适用边界</div>
-        <div className="fit-layout">
-          <div className="fit-card suitable">
-            <span className="fit-label">比较适合</span>
-            <h2>你已经开始认真对待长期健康。</h2>
-            <ul>
-              <li>35—55 岁，已经为健康投入过时间和金钱</li>
-              <li>有一个明确的非诊疗困扰或生活方式目标</li>
-              <li>面对大量信息，不知道下一步如何选择</li>
-              <li>愿意整理事实、留下记录并参与复盘</li>
-            </ul>
-          </div>
-          <div className="fit-card unsuitable">
-            <span className="fit-label">暂不适合</span>
-            <h2>你现在需要的是医学判断或治疗。</h2>
-            <ul>
-              <li>正在处理重大疾病、急性问题或进行性症状</li>
-              <li>希望判断疾病、症状原因或病情轻重</li>
-              <li>希望获得药物、检查、治疗或康复方案</li>
-              <li>希望预测寿命、生物年龄或疾病风险</li>
-            </ul>
-            <a href="/boundaries">查看完整服务边界 →</a>
-          </div>
-        </div>
-      </section>
-
-      <section className="origin-section section" id="origin" data-page data-page-title="为什么做健年">
-        <div className="section-label">10 / 为什么做健年</div>
-        <div className="origin-layout">
-          <div className="origin-mark">健年</div>
-          <div className="origin-copy">
-            <p className="origin-lead">健年源于一次真实的健康困境。</p>
-            <h2>我们想要的，不是一个更长的寿命数字。</h2>
-            <p>创始人在医院、康复机构、治疗设备和健康产品上投入了大量时间和金钱，却始终没有得到一条清晰、连续、可验证的路径。</p>
-            <p>健年希望把复杂的健康信息变得更清楚，让人更早开始投资未来的行动能力、精力和生活自由，让每一次选择少一些盲目，多一些依据。</p>
-            <p className="origin-vision">让有活力的人生，尽可能长。</p>
-            <blockquote>科学养生，少走弯路。</blockquote>
-          </div>
-        </div>
-      </section>
-
-      <section className="experience-section section" id="experience" data-page data-page-title="首批体验">
-        <div className="section-label">11 / 首批体验</div>
-        <div className="experience-card">
-          <div className="experience-topline"><span>首批体验版 · 筹备中</span><span>限 5 位</span></div>
-          <div className="experience-layout">
-            <div>
-              <p className="kicker light-text">健年·未来十年健康盘点</p>
-              <h2>健康上已经投入不少，<br />却还是不知道下一步？</h2>
-              <p>首批体验将采用人工深度交付，用真实订单验证这套服务是否真正有用。</p>
-            </div>
-            <div className="experience-offer">
-              <span>创始体验价</span>
-              <strong><small>¥</small>999</strong>
-              <ul><li>信息表＋深度访谈</li><li>一图、一书、一包、一卡</li><li>45 分钟线上复盘</li><li>30 天后回看</li></ul>
-              <button type="button" disabled>登记入口即将开放</button>
-              <small>正式开放前，将先完成专业审核与基础合规流程。</small>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="faq-section section" id="faq" data-page data-page-title="常见问题">
-        <div className="section-label">12 / 常见问题</div>
-        <div className="faq-layout">
-          <div className="section-heading"><p className="kicker">在申请之前</p><h2>你可能还想知道</h2></div>
-          <div className="faq-list">
-            <details><summary>这是体检报告解读吗？<span>＋</span></summary><p>不是。已有资料只用于整理时间线和准备专业沟通，本服务不解释检查结果，也不判断疾病风险。</p></details>
-            <details><summary>你们会告诉我得了什么病吗？<span>＋</span></summary><p>不会。健年不提供诊断、排除诊断、治疗或用药建议；需要医学判断时，应优先联系合格医疗专业人员。</p></details>
-            <details><summary>为什么这和“长寿”有关？<span>＋</span></summary><p>健年关注的不是单纯增加寿命数字，而是延长保持活力、独立和自主的生命阶段。未来十年帮助你明确想长期保留的生活能力，让今天的健康投入不再只解决一次焦虑。</p></details>
-            <details><summary>健年能找到我的“身体短板”吗？<span>＋</span></summary><p>当前产品识别的是健康管理中的信息、认知、执行和资源断点，不诊断身体问题。涉及身体机能、疾病或医学风险的短板，应由对应领域的合格专业人员评估。</p></details>
-            <details><summary>需要提交完整病历吗？<span>＋</span></summary><p>不需要。我们坚持最少收集，首轮申请也不会收取病历；确有必要时，只接收完成盘点所需的脱敏副本。</p></details>
+      <section className="about-section section" id="about" data-page data-page-title="关于健年">
+        <div className="section-label">05 / 为什么做健年</div>
+        <div className="about-layout">
+          <div className="about-mark"><span>健年</span><small>HEALTHSPAN</small></div>
+          <div className="about-copy">
+            <p className="kicker">我们不想再制造更多健康信息</p>
+            <h2>我们想让复杂的健康选择，<br />少一些盲目，多一些依据。</h2>
+            <p>健康世界里不缺建议。真正困难的是：不同说法该信谁，一件事该不该做，一笔钱花出去之后怎么知道有没有价值。</p>
+            <p>健年希望长期站在用户这一边，认真查证据、拆问题、算投入，也诚实说明不知道什么、什么时候必须交给合格专业人员。</p>
+            <blockquote>让有活力的人生，尽可能长。</blockquote>
           </div>
         </div>
       </section>
@@ -339,9 +224,9 @@ export default function Home() {
       <footer id="footer" data-page data-page-title="健年 Healthspan">
         <div className="footer-kicker">END / 健年 HEALTHSPAN</div>
         <div className="footer-brand"><span className="brand-seal inverse">健</span><div><strong>健年</strong><small>HEALTHSPAN</small></div></div>
-        <div className="footer-statement"><strong>让有活力的人生，尽可能长。</strong><span>科学养生，少走弯路。让复杂的健康信息，变成普通人能够理解和使用的选择。</span></div>
-        <div className="footer-links"><a href="/sample">样板案例</a><a href="/boundaries">服务边界</a><a href="/privacy">隐私说明</a><span>多活十年 Lab</span></div>
-        <div className="footer-bottom"><span>© 2026 健年 Healthspan</span><span>非诊疗健康信息整理与健康素养服务</span></div>
+        <div className="footer-statement"><strong>健康少踩坑，花钱少冤枉。</strong><span>关注多活十年 Lab，和我们一起把健康功课做得更明白。</span></div>
+        <div className="footer-links"><a href="#follow">关注账号</a><a href="#architecture">品牌架构</a><a href="/boundaries">内容边界</a><a href="/privacy">隐私说明</a></div>
+        <div className="footer-bottom"><span>© 2026 健年 Healthspan</span><span>一般性健康信息与健康素养内容，不替代医疗服务</span></div>
       </footer>
     </main>
   );

@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
-export const metadata: Metadata = { title: "隐私与资料处理" };
+export const metadata: Metadata = { title: "网站隐私说明" };
 
 export default function PrivacyPage() {
   return <main className="subpage"><div className="subpage-shell">
-    <a className="back-link" href="/">← 返回健年首页</a>
-    <section className="subpage-hero"><p className="kicker">隐私说明</p><h1>少收集，<br />先脱敏，用完删除。</h1><p>健康资料属于敏感个人信息。健年坚持用流程和产品设计降低风险，不轻率承诺“绝对匿名”或“绝不泄露”。</p></section>
-    <section className="content-block"><h2>信息最小化</h2><p>每一项资料都必须回答：“没有它，是否无法完成本次约定交付？”如果不能，就不收集。首轮申请不会要求提交完整病历。</p><ul><li>默认不需要身份证号码、家庭住址、病历号和医保号</li><li>不收集与本次盘点无关的全部病历</li><li>不因为“未来可能有用”无限期保存资料</li></ul></section>
-    <section className="content-block"><h2>优先在本地脱敏</h2><p>如确有必要提交已有资料，用户应先在自己的设备上生成脱敏副本，遮盖姓名、电话、病历号等直接身份信息。删除姓名不等于完全匿名，医院、日期、职业和罕见情况的组合仍可能指向个人。</p></section>
-    <section className="content-block"><h2>明确保存与删除</h2><ul><li>提交前说明处理目的、资料范围、访问人员和保存期限</li><li>不通过公开链接、普通群聊或代码仓库传递健康资料</li><li>服务结束后按约定删除，不擅自保留副本</li><li>将案例用于公开内容前，必须重新获得授权并再次处理</li></ul><div className="boundary-callout"><strong>当前阶段</strong><p>本地病历脱敏工具仍在定义和验证中，官网不会把它宣传成已经可下载的产品。</p></div></section>
+    <Link className="back-link" href="/">← 返回健年首页</Link>
+    <section className="subpage-hero"><p className="kicker">网站隐私说明</p><h1>少收集，<br />不为“以后可能有用”囤数据。</h1><p>当前官网用于说明健年品牌并引导关注多活十年 Lab，不提供产品申请，也不要求访客提交健康资料。</p></section>
+    <section className="content-block"><h2>当前网站不收什么</h2><ul><li>不要求上传病历、检查结果、身份证明或联系方式</li><li>不提供健康问卷、疾病评估或个体健康建议</li><li>不把访问网站视为用户已经同意未来服务的数据处理</li></ul></section>
+    <section className="content-block"><h2>跳转到其他平台</h2><p>官网后续会提供公众号、小红书、视频号和抖音等外部平台入口。离开本站后，相关平台会按照自己的隐私规则处理访问数据；关注前可先查看对应平台的隐私说明。</p><div className="boundary-callout"><strong>当前占位状态</strong><p>官网中的二维码和账号入口尚未接入正式链接。占位二维码明确标注为不可扫描，不会跳转到未知页面。</p></div></section>
+    <section className="content-block"><h2>未来如果增加互动功能</h2><p>如果以后增加订阅、留言、工具或服务申请，我们会在上线前单独说明收集目的、资料范围、保存期限和删除方式，不沿用一份模糊授权覆盖所有用途。</p></section>
   </div></main>;
 }

@@ -12,21 +12,22 @@ test("server-renders the finished brand homepage", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   const html = await response.text();
-  assert.match(html, /科学养生/);
-  assert.match(html, /少走弯路/);
-  assert.match(html, /未来十年健康盘点/);
-  assert.match(html, /让有活力的人生/);
-  assert.match(html, /找到关键短板/);
-  assert.match(html, /虚构样板/);
+  assert.match(html, /专替忙人做/);
+  assert.match(html, /健康功课/);
+  assert.match(html, /多活十年 Lab/);
+  assert.match(html, /首要关注入口/);
+  assert.match(html, /二维码占位/);
+  assert.match(html, /健年 Healthspan/);
+  assert.doesNotMatch(html, /未来十年健康盘点|创始体验价|¥999|首批体验/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton/);
 });
 
-test("renders the trust and boundary pages", async () => {
+test("renders the public boundary and privacy pages", async () => {
   const [sample, boundaries, privacy] = await Promise.all([render("/sample"), render("/boundaries"), render("/privacy")]);
-  assert.equal(sample.status, 200);
+  assert.equal(sample.status, 307);
+  assert.equal(sample.headers.get("location"), "http://localhost/");
   assert.equal(boundaries.status, 200);
   assert.equal(privacy.status, 200);
-  assert.match(await sample.text(), /31,600/);
-  assert.match(await boundaries.text(), /不卖诊断/);
-  assert.match(await privacy.text(), /少收集/);
+  assert.match(await boundaries.text(), /内容与专业边界/);
+  assert.match(await privacy.text(), /不要求访客提交健康资料/);
 });
