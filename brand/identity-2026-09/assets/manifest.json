@@ -1,0 +1,129 @@
+{
+  "status": "review-proposal",
+  "date": "2026-09-08",
+  "recommended": "A 年字长线",
+  "geometry": "Original geometric paths authored for this proposal; trademark similarity clearance not performed.",
+  "lettering": "Source Han Serif SC SemiBold; SIL OFL 1.1; outlined in all standalone SVGs.",
+  "palette": {
+    "品牌绿": "#1e493c",
+    "暖纸白": "#f5f1e8",
+    "活力橙": "#e86f3e",
+    "墨绿": "#152b24",
+    "行动绿": "#227d66",
+    "批注红": "#bd4a35"
+  },
+  "assets": [
+    {
+      "file": "avatar.svg",
+      "sha256": "669072ea7493a77f345ae4d5d81a0d7771621909ff3752c7ea85221d284b7cc1"
+    },
+    {
+      "file": "brand-overview.svg",
+      "sha256": "dd5ca52b5c9590531de13205307ce712a342f1f4bbd7c167c3d956b735c2b816"
+    },
+    {
+      "file": "business-card-back.svg",
+      "sha256": "ba422882f983b316198786b892d2710994f65a5845cf68f6ed656d0a6a5352c7"
+    },
+    {
+      "file": "business-card-front.svg",
+      "sha256": "5628d8f2d535e57c1ede8ba58eecaad0357761c4b4d547fc65a3005604f61a39"
+    },
+    {
+      "file": "direction-b.svg",
+      "sha256": "69c50b405b3565ebbc9613cc832fb1b88e0754d4a281b2156e921f71dc8662c1"
+    },
+    {
+      "file": "direction-c.svg",
+      "sha256": "ce4c7c2374a599eda023d45feda4387cf1daeeb89c7f7f72dbaf2d8af7a077cd"
+    },
+    {
+      "file": "endorsement.svg",
+      "sha256": "9c283ffc55e2fbdcd71f7bbb15e4e7be5c0b882efbcdf5aae919fbf915f19e1c"
+    },
+    {
+      "file": "health-homework-sheet.svg",
+      "sha256": "f3cee7c7fd4463b256b32b3ff6af3216341b2f61b1e314bfcf9524ba7b6acea2"
+    },
+    {
+      "file": "icon-black.svg",
+      "sha256": "de8b53086f66fc564629db245afdd773c4547e7a06360bb0b6e51a9198caf316"
+    },
+    {
+      "file": "icon-mono.svg",
+      "sha256": "e8aba29ad4729a42f0a065dba84447c7878d2df6130fc7e476bd2e9314263c5a"
+    },
+    {
+      "file": "icon-primary.svg",
+      "sha256": "5f863df758c776fec771e3980e33fc11615efe9de6abea9733226055560ec377"
+    },
+    {
+      "file": "icon-reverse.svg",
+      "sha256": "6635984e1c30583985c4211e5fa5c8bcbe696f90e4d7168d34d709c9e5ba2b75"
+    },
+    {
+      "file": "letterhead-a4.svg",
+      "sha256": "ffb318cb321e7228f6e2a86516e31b7075740d4d475482e0038070310caf68e3"
+    },
+    {
+      "file": "logo-chinese-black.svg",
+      "sha256": "ea478b06ca9023b4d91ff21328890128ad46c57d5485e9f57784fdd98cc80de9"
+    },
+    {
+      "file": "logo-chinese-mono.svg",
+      "sha256": "a51e7186c9c449cac9955909956329cee0c7a006bc20138ae2e56a2bb3740d33"
+    },
+    {
+      "file": "logo-chinese-primary.svg",
+      "sha256": "ffcdc3d876e71df555fa0c22f713c6bb914269171bb5e8a40698407cbc0be738"
+    },
+    {
+      "file": "logo-chinese-reverse.svg",
+      "sha256": "8f557e6e3286c5dc39a7df75c5c3482402631aac02adc7316e69cf1d7a647b90"
+    },
+    {
+      "file": "logo-horizontal-black.svg",
+      "sha256": "de8037b4a4121074a9cd3fee45bef330ab29b7676c7a3a35a01c89e007eb4e93"
+    },
+    {
+      "file": "logo-horizontal-mono.svg",
+      "sha256": "01b0ccfe2c96cb0dc53f14fb49af86f638b9cf2a29514eb7358886ead1f23b09"
+    },
+    {
+      "file": "logo-horizontal-primary.svg",
+      "sha256": "beb092914174de1195182f3c86d5025dd00d68c78b505d96e8af30ddab1a57e7"
+    },
+    {
+      "file": "logo-horizontal-reverse.svg",
+      "sha256": "bea79599cff5f69bd559d5c88c8be736f97acd17744f30c22aacdbdace43b527"
+    },
+    {
+      "file": "logo-stacked-black.svg",
+      "sha256": "82f73522ef104c9f4bdb15f4e8459218036f883c7e42ec0f76c1312605c41bf7"
+    },
+    {
+      "file": "logo-stacked-mono.svg",
+      "sha256": "57eae674eb03773794c918826068f38fc12b33f14ae8d8851f0b1b452748d122"
+    },
+    {
+      "file": "logo-stacked-primary.svg",
+      "sha256": "0fe293963daef4321fb86b2e81a7769fca7d7695b560c87c8d3127453e343010"
+    },
+    {
+      "file": "logo-stacked-reverse.svg",
+      "sha256": "9714a326bb1d57479d5683d4a7da1bdb06ee6bc2655461a03276fe0add62dc30"
+    },
+    {
+      "file": "social-cover-3x4.svg",
+      "sha256": "33e85f688092153f85e9ba112039a739eb30b96c5297c17a11fc6f011fac8a74"
+    },
+    {
+      "file": "video-title-16x9.svg",
+      "sha256": "3d6759891e489a0ac9eb720c94a2f6771bad5789bacc0fd80bcd21438fea6d5a"
+    },
+    {
+      "file": "wordmark-chinese-black.svg",
+      "sha256": "ece7a358ffc81672735070a5e7fc4cd27f5e326dccd6fdb1c5a32e958c0f6222"
+    }
+  ]
+}

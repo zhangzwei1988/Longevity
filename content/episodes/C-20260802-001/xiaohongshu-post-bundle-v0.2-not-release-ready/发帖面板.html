@@ -1,0 +1,42 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>小红书发帖面板</title><style>
+    :root{--paper:#f5f1e8;--ink:#152b24;--green:#1e493c;--orange:#e86f3e;--muted:#56665f;--line:#c7c8be}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}
+    main{max-width:1100px;margin:auto;padding:34px 22px 70px}h1{font-size:34px;margin:0 0 10px}.status{padding:12px 16px;background:#f9e1d2;border-left:6px solid var(--orange);margin:18px 0 26px}
+    section{background:#fff;padding:22px;margin:16px 0;border:1px solid var(--line)}h2{margin:0 0 14px;font-size:22px}pre{white-space:pre-wrap;font:inherit;line-height:1.75;margin:0}
+    button{border:0;background:var(--green);color:#fff;padding:11px 18px;margin:0 8px 8px 0;border-radius:8px;font-weight:650;cursor:pointer}button.secondary{background:var(--orange)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}figure{margin:0;background:#fff;padding:8px;border:1px solid var(--line)}img{width:100%;display:block}figcaption{padding:8px 2px 2px;color:var(--muted);font-size:13px}
+    #toast{position:fixed;right:20px;bottom:20px;background:var(--ink);color:#fff;padding:10px 14px;border-radius:8px;opacity:0;transition:.2s}#toast.show{opacity:1}
+    </style></head><body><main><h1>小红书发帖面板</h1><div class="status">审核用发帖包，当前不可发布 · DesignTrial / NotReleaseReady</div>
+    <section><h2>一键复制</h2><button onclick="copyText(TITLE)">复制标题</button><button onclick="copyText(BODY)">复制正文＋互动＋标签</button><button class="secondary" onclick="copyText(FULL)">复制完整 Brief</button></section>
+    <section><h2>标题</h2><pre>准备花几万元买健康项目？付款前先问这4件事</pre></section><section><h2>正文＋互动＋标签</h2><pre>晚上十点，销售还在等你确认。优惠、名额、案例一起往前推，人很容易先问：还能不能便宜一点？
+
+这时候更该先问的是：这几万元，我到底买到了什么？
+
+我把付款前需要核对的信息整理成了四句：
+
+1. 买什么：具体交付什么，谁来做，哪些问题回答不了？
+2. 凭什么：依据真正支持什么，和眼前这个项目有什么关系？
+3. 怎么算做到：开始前看什么，多久复盘，由谁记录和解释？
+4. 出事找谁：谁收钱、谁服务、发票谁开，退款或暂停怎么办？
+
+如果还要提交体检报告、病历或影像，再问清用途、保存时间、共享对象，以及怎样查询、更正或删除。
+
+这四句不能替你判断具体项目有没有疗效，也不能判断它是否适合个人。涉及检查、治疗、康复或医疗器械用途，应找独立、具备相应资质的专业人员确认。
+
+今晚不急着付。请对方用合同、说明书或正式材料回答。说清楚不等于一定该买，一项答不上来也不等于当场违法。
+
+有些钱可以花。别花成一张阅读理解报名费。
+
+这四句里，你最难问清的是哪一句？
+
+#健康消费 #理性消费 #健康管理 #消费者权益 #个人信息保护</pre></section>
+    <section><h2>图片上传顺序</h2><div class="grid"><figure><img src="images/01-cover.png" alt="第 1 张"><figcaption>01 · 01-cover.png</figcaption></figure>
+<figure><img src="images/02-homework-sheet.png" alt="第 2 张"><figcaption>02 · 02-homework-sheet.png</figcaption></figure>
+<figure><img src="images/03-send-this.png" alt="第 3 张"><figcaption>03 · 03-send-this.png</figcaption></figure>
+<figure><img src="images/04-promise.png" alt="第 4 张"><figcaption>04 · 04-promise.png</figcaption></figure>
+<figure><img src="images/05-evidence.png" alt="第 5 张"><figcaption>05 · 05-evidence.png</figcaption></figure>
+<figure><img src="images/06-acceptance-mismatch.png" alt="第 6 张"><figcaption>06 · 06-acceptance-mismatch.png</figcaption></figure>
+<figure><img src="images/07-responsibility.png" alt="第 7 张"><figcaption>07 · 07-responsibility.png</figcaption></figure>
+<figure><img src="images/08-health-data.png" alt="第 8 张"><figcaption>08 · 08-health-data.png</figcaption></figure>
+<figure><img src="images/09-closing.png" alt="第 9 张"><figcaption>09 · 09-closing.png</figcaption></figure></div></section></main><div id="toast">已复制</div>
+    <script>const TITLE="准备花几万元买健康项目？付款前先问这4件事",BODY="晚上十点，销售还在等你确认。优惠、名额、案例一起往前推，人很容易先问：还能不能便宜一点？\n\n这时候更该先问的是：这几万元，我到底买到了什么？\n\n我把付款前需要核对的信息整理成了四句：\n\n1. 买什么：具体交付什么，谁来做，哪些问题回答不了？\n2. 凭什么：依据真正支持什么，和眼前这个项目有什么关系？\n3. 怎么算做到：开始前看什么，多久复盘，由谁记录和解释？\n4. 出事找谁：谁收钱、谁服务、发票谁开，退款或暂停怎么办？\n\n如果还要提交体检报告、病历或影像，再问清用途、保存时间、共享对象，以及怎样查询、更正或删除。\n\n这四句不能替你判断具体项目有没有疗效，也不能判断它是否适合个人。涉及检查、治疗、康复或医疗器械用途，应找独立、具备相应资质的专业人员确认。\n\n今晚不急着付。请对方用合同、说明书或正式材料回答。说清楚不等于一定该买，一项答不上来也不等于当场违法。\n\n有些钱可以花。别花成一张阅读理解报名费。\n\n这四句里，你最难问清的是哪一句？\n\n#健康消费 #理性消费 #健康管理 #消费者权益 #个人信息保护",FULL="【标题】\n准备花几万元买健康项目？付款前先问这4件事\n\n【正文与标签】\n晚上十点，销售还在等你确认。优惠、名额、案例一起往前推，人很容易先问：还能不能便宜一点？\n\n这时候更该先问的是：这几万元，我到底买到了什么？\n\n我把付款前需要核对的信息整理成了四句：\n\n1. 买什么：具体交付什么，谁来做，哪些问题回答不了？\n2. 凭什么：依据真正支持什么，和眼前这个项目有什么关系？\n3. 怎么算做到：开始前看什么，多久复盘，由谁记录和解释？\n4. 出事找谁：谁收钱、谁服务、发票谁开，退款或暂停怎么办？\n\n如果还要提交体检报告、病历或影像，再问清用途、保存时间、共享对象，以及怎样查询、更正或删除。\n\n这四句不能替你判断具体项目有没有疗效，也不能判断它是否适合个人。涉及检查、治疗、康复或医疗器械用途，应找独立、具备相应资质的专业人员确认。\n\n今晚不急着付。请对方用合同、说明书或正式材料回答。说清楚不等于一定该买，一项答不上来也不等于当场违法。\n\n有些钱可以花。别花成一张阅读理解报名费。\n\n这四句里，你最难问清的是哪一句？\n\n#健康消费 #理性消费 #健康管理 #消费者权益 #个人信息保护\n";async function copyText(v){await navigator.clipboard.writeText(v);const t=document.getElementById('toast');t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1300)}</script></body></html>

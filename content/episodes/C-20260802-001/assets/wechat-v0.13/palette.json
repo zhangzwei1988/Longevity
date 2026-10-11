@@ -1,0 +1,16 @@
+{
+  "status": "Testing / NeedsCreatorReview",
+  "source": "website/app/globals.css",
+  "paper": "#F5F1E8",
+  "paper_deep": "#EAE3D5",
+  "ink": "#152B24",
+  "brand_green": "#1E493C",
+  "green_deep": "#0F3028",
+  "sage": "#ADC3B5",
+  "mint": "#DFE9DF",
+  "orange": "#E86F3E",
+  "orange_soft": "#F6C5AA",
+  "muted": "#56665F",
+  "line": "#C7C8BE",
+  "orange_pale": "#F9E1D2"
+}

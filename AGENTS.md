@@ -7,8 +7,16 @@
 开始任何工作前先读：
 
 1. `docs/00-current-context.md`
-2. 与任务直接相关的文件
-3. 涉及用户资料时必须读 `compliance/medical-and-privacy-boundaries.md`
+2. `docs/05-cross-project-boundary-and-index.md`
+3. 与任务直接相关的文件
+4. 涉及用户资料时必须读 `compliance/medical-and-privacy-boundaries.md`
+
+## 与 LifeOS 的边界
+
+- 本仓库是“长寿”项目详细事实、品牌、内容、研究、运营和商业实验的唯一事实源。
+- LifeOS 只保存项目状态摘要、跨项目资源约束、重大决策索引和本仓库入口，不保存详细业务文档的平行副本。
+- 当任务受到个人时间、健康、财务或其他项目优先级影响时，再读取 `/Users/john/CodeShop/LifeOS/20_PROJECTS/Longevity/PROJECT.md` 及其明确链接的 LifeOS 上下文。
+- 项目内部的新事实先更新本仓库；只有阶段、优先级、资源或重大决策发生变化时，才同步摘要到 LifeOS。
 
 ## 事实层级
 
@@ -19,6 +27,8 @@
 3. 项目决策记录
 4. 当前战略文档
 5. 原项目资料与未经验证的构想
+
+同一层级发生冲突时，以日期更新、状态明确的最新决策为准。`decisions/0009-content-foundation-and-organic-commercialization.md` 是当前阶段优先级最高的方向决策。
 
 ## 工作约束
 
